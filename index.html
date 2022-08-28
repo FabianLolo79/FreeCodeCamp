@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+  <!-- acá van todos los metadatos de la pagina e informacion, actúan detrás de escena -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Curso FreeCodeCamp HTML y Css desde Cero 28/08/2022</title>
+</head>
+<body>
+
+    <h2>AppDeGatos</h2> 
+    
+    <main>
+      <h3>Imágenes de Gatos:</h3>
+      <!-- To Do: agregar enlace a imágenes de gatos -->
+      <!-- atributo rel="noopener noreferrer"  previene ataque llamado tabnabbing, se reemplaza la pestaña de origen y roban datos-->
+      <p>Haz click aquí para ver más <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer">imágenes de gatos.</a></p>  <!-- enlace en porción del texto -->
+
+      <!-- enlace en imágen -->
+      <a href="https://www.freecodecamp.org/espanol/" target="_blank" rel="noopener noreferrer"><img src="https://bit.ly/fcc-relaxing-cat" alt="Un lindo gato naranja recostado sobre su espalda."></a>
+
+      <!-- etiqueta linea horizontal <hr> hotizontal rule-->
+      <hr>
+
+      <!-- ejemplos de listas No ordenadas -->
+      <h3>Listas de Gatos</h3>
+
+    <div>
+      <p>Cosas que los gatos <em>aman</em>:</p> <!-- etiqueta <em> para cursiva -->
+      <ul>
+        <li>Menta gatuna</li>
+        <li>Apuntadores Láser</li>
+        <li><s>Lasagña</s></li> <!-- etiqueta <s> para tachado -->
+      </ul>
+      <img src="img/lasagna-1900529__480.jpg" alt="Un plato de lasagna">
+
+      <!-- ejemplo de lista ordenada -->
+      <p>Cosas que los gatos <strong>odian</strong>:</p> <!-- etiqueta <strong> para resaltar -->
+      <ol>
+        <li>Tratamientos antipulgas</li>
+        <li>Truenos</li>
+        <li>Otros gatos</li>
+      </ol>
+    </div>
+      <img src="img/kittens-3535404_960_720.jpg" alt="tres gatitos bebés">
+      
+      <!-- ejemplo de formulario -->
+      <form action="">
+        <!-- click en el radio y el texto <label> -->
+          <!-- BOTONES DE RADIO -->
+        <label for="interior">
+          <input type="radio" value="interior" id="interior" name="interior-exterior" checked>Interior
+        </label>
+        <!-- breake salto de linea  -->
+        <br>
+        <label for="exterior">
+          <input type="radio" value="exterior" id="exterior" name="interior-exterior">Exterior
+        </label>
+        <br>
+       
+        <!-- CASILLAS DE VERIFICACION -->
+        <label for="carinoso">
+          <input type="checkbox" id="carinoso" name="personalidad" checked value="carinoso">Cariñoso
+        </label><br>
+        <label for="perezoso">
+          <input type="checkbox" id="perezoso" name="personalidad" value="perezoso">Perezoso
+        </label><br>
+        <label for="energico">
+          <input type="checkbox" id="energico" name="personalidad" value="energetico">Enérgico
+        </label><br>
+        
+        <br>
+        <!-- TEXTO  -->
+        <input type="text" placeholder="URL de la foto de tu gato" required>
+          <!-- BOTON ENVIAR -->
+        <br>
+        <button type="submit">Enviar</button>
+      </form>
+    </main>
+    <!-- Pie de pagina -->
+    <footer>
+      <!-- etiqueta <small> indica que el texto sea más pequeño -->
+      <p><small>Sin Derechos de Autor - <a href="#">Kalimocho</a></small></p>
+    </footer>
+</body>
+</html>
